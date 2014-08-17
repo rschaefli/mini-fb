@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+
+<% 50.times do |n| %>
+user_<%= n %>:
+  first_name: John
+  last_name:  <%= "the {n}th" %>
+  education: <%= "#{n} years at NEU" %>
+  birthday: <%= "#{n}-1-29" %>
+  location: <%= "#{n} street, Boston MA" %>
+  profile_picture_path: null
+<% end %>
+
+#one:
+#  first_name: john
